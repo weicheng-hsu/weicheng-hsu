@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin" />
   </a>
   <a href="https://github.com/weicheng-hsu">
-    <img src="https://img.shields.io/badge/GitHub-weicheng-hsu-black?style=flat&logo=github" />
+  <img src="https://img.shields.io/badge/GitHub-weicheng--hsu-black?style=flat&logo=github" />
   </a>
 </p>
 
