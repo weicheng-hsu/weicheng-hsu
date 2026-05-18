@@ -40,6 +40,22 @@ I enjoy turning research ideas into reproducible software systems, including exp
 
 ---
 
+## Open Source Contributions
+
+### Apache TVM
+
+- [[Relax][Frontend][TFLite] Add Conv3D support](https://github.com/apache/tvm/pull/19523)
+- [[Relax][Frontend] Add TFLite Frontend Support for CONV_3D_TRANSPOSE](https://github.com/apache/tvm/pull/19530)
+- [[Relax][TFLite] Add gather frontend expected IRModule tests](https://github.com/apache/tvm/pull/19516)
+
+### BrowserOS
+
+- [[Feature Request] Support top/bottom tab split panes inside the same browser window](https://github.com/browseros-ai/BrowserOS/issues/928)
+
+I contribute to open-source ML systems and developer tools, mainly around TVM Relax TFLite frontend and AI-assisted developer workflows.
+
+---
+
 ## Featured Projects
 
 ### HyperOpt Viz Studio
