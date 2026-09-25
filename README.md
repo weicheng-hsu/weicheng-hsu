@@ -48,11 +48,15 @@ I enjoy turning research ideas into reproducible software systems, including exp
 - [[Relax][Frontend] Add TFLite Frontend Support for CONV_3D_TRANSPOSE](https://github.com/apache/tvm/pull/19530)
 - [[Relax][TFLite] Add gather frontend expected IRModule tests](https://github.com/apache/tvm/pull/19516)
 
+### PyTorch
+
+- [[dynamo] Match CPython repr for self-referential sets and set subclasses](https://github.com/pytorch/pytorch/pull/198476) (merged)
+
 ### BrowserOS
 
 - [[Feature Request] Support top/bottom tab split panes inside the same browser window](https://github.com/browseros-ai/BrowserOS/issues/928)
 
-I contribute to open-source ML systems and developer tools, mainly around TVM Relax TFLite frontend and AI-assisted developer workflows.
+I contribute to open-source ML systems and developer tools, mainly around PyTorch Dynamo, the TVM Relax TFLite frontend, and AI-assisted developer workflows.
 
 ---
 
