@@ -2,7 +2,7 @@
 
 **ML Systems · Compiler Correctness · Developer Tools**
 
-M.S. student at National Yang Ming Chiao Tung University (NYCU) and open-source contributor to **PyTorch** and **Apache TVM**. My work spans Python runtime compatibility, ML compiler frontends, and tools for reproducible experiments.
+M.S. student at National Yang Ming Chiao Tung University (NYCU) and open-source contributor to **PyTorch**, **Apache TVM**, and **Modular / Mojo**. My work spans Python runtime compatibility, ML compiler frontends, and tools for reproducible experiments.
 
 Interested in software engineering roles in ML systems, compilers, and AI infrastructure.
 
@@ -29,7 +29,7 @@ Interested in software engineering roles in ML systems, compilers, and AI infras
 
 Added a compile-time type constraint and regression tests to `Tuple.__contains__`, so incompatible lookup types produce a compile-time error. [#7234](https://github.com/modular/modular/pull/7234)
 
-*Status as of October 6, 2026: merged into internal upstream Mojo sources; public repository sync pending. [Official confirmation](https://github.com/modular/modular/pull/7234#issuecomment-6006492778).*
+**Merged upstream and landed in the public repository.** [Upstream commit](https://github.com/modular/modular/commit/169207304e2c37c88483f3a41fc33b9ab519e02b).
 
 ## Selected Projects
 
