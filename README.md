@@ -50,13 +50,22 @@ I enjoy turning research ideas into reproducible software systems, including exp
 
 ### PyTorch
 
+Two contributions landed in upstream PyTorch, improving CPython-compatible behavior in TorchDynamo under `torch.compile` with regression tests.
+
+- [[dynamo] Match CPython repr for self-referential UserList and UserDict](https://github.com/pytorch/pytorch/pull/198512) (merged)
 - [[dynamo] Match CPython repr for self-referential sets and set subclasses](https://github.com/pytorch/pytorch/pull/198476) (merged)
+
+### Modular / Mojo
+
+- [[stdlib] Require `Tuple.__contains__` values to match an element type](https://github.com/modular/modular/pull/7234)
+  - Added a compile-time type constraint and regression tests so tuple membership checks reject incompatible lookup types.
+  - Merged into internal upstream Mojo sources; public repository sync pending as of October 6, 2026. [Maintainer bot confirmation](https://github.com/modular/modular/pull/7234#issuecomment-6006492778).
 
 ### BrowserOS
 
 - [[Feature Request] Support top/bottom tab split panes inside the same browser window](https://github.com/browseros-ai/BrowserOS/issues/928)
 
-I contribute to open-source ML systems and developer tools, mainly around PyTorch Dynamo, the TVM Relax TFLite frontend, and AI-assisted developer workflows.
+I contribute to open-source ML systems, compiler correctness, and developer tools, with work on PyTorch Dynamo, the TVM Relax TFLite frontend, and the Mojo standard library.
 
 ---
 
