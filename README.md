@@ -12,7 +12,9 @@ Interested in software engineering roles in ML systems, compilers, and AI infras
 
 ### PyTorch — TorchDynamo correctness
 
-**2 contributions merged upstream.** Fixed differences between `torch.compile` and CPython when formatting self-referential containers, with full-graph regression tests.
+**3 contributions merged upstream.** Improved compatibility between `torch.compile` and CPython for mapping proxies and self-referential containers, with full-graph regression tests.
+
+- **Mapping proxies:** added `repr` / `str` support and regression tests for wrapped mappings, mutation, and cache reuse. [#196902](https://github.com/pytorch/pytorch/pull/196902)
 
 - **UserList / UserDict:** corrected cycle handling so recursive representations match CPython. [#198512](https://github.com/pytorch/pytorch/pull/198512)
 - **Sets and set subclasses:** corrected recursive placeholders and preserved subclass names. [#198476](https://github.com/pytorch/pytorch/pull/198476)
