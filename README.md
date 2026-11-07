@@ -10,9 +10,9 @@ I am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**. My 
 
 ## Independent Open Source Contributions
 
-### PyTorch — TorchDynamo correctness
+### PyTorch — TorchDynamo repr / str compatibility
 
-**3 fixes integrated upstream.** Improved CPython compatibility under `torch.compile`, with regression tests covering recursive formatting, mutation handling, and compilation-cache reuse. These contributions removed **7 CPython 3.13 expected-failure markers**.
+**3 fixes integrated upstream.** Improved CPython-compatible `repr` / `str` formatting under `torch.compile`, with regression tests covering recursive formatting, mutation handling, and compilation-cache reuse. These contributions removed **7 CPython 3.13 expected-failure markers**.
 
 - **Mapping proxies:** added `repr` / `str` support while preserving mutation guards and recursive formatting. [#196902](https://github.com/pytorch/pytorch/pull/196902) · [Upstream commit](https://github.com/pytorch/pytorch/commit/755122e63e7b5644dae7233166b7ff24cf816b6b)
 - **Sets and set subclasses:** corrected recursive placeholders and preserved subclass names. [#198476](https://github.com/pytorch/pytorch/pull/198476) · [Upstream commit](https://github.com/pytorch/pytorch/commit/056b6cac6a66edc0b9690e4648297056aee55120)
@@ -28,7 +28,7 @@ I am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**. My 
 
 ### Modular / Mojo — Standard library type safety
 
-Added a compile-time constraint to `Tuple.__contains__` to reject incompatible lookup types, with **4 compile-fail regression cases**. Integrated into the public upstream repository.
+Added a compile-time constraint to `Tuple.__contains__` to reject incompatible lookup types, with **one compile-fail regression test covering four type-mismatch cases**. Integrated into the public upstream repository.
 
 [#7234](https://github.com/modular/modular/pull/7234) · [Upstream commit](https://github.com/modular/modular/commit/169207304e2c37c88483f3a41fc33b9ab519e02b)
 
@@ -50,14 +50,14 @@ A personal Python project that connects coding-agent command-line interface (CLI
 A personal Flask / React dashboard for inspecting hyperparameter optimization (HPO) experiments.
 
 - Connected experiment, task, method, and run navigation to a Flask data service.
-- Built optimization replay, parallel coordinates, and metric plots to inspect the search process.
+- Built a visual replay of saved trial results, parallel coordinates, and metric plots to inspect the search process.
 
 **Built with:** React, TypeScript, Vite, Flask  
 [Repository](https://github.com/weicheng-hsu/HyperOpt-viz-Studio)
 
 ### BrowserOS — C++ split-pane prototype
 
-Developed a Chromium-based split-pane prototype with toolbar routing and resizing; built with `autoninja`, manually checked pane behavior, and added browser tests. **Prototype PR #1015 was closed without merging.**
+Developed a Chromium-based C++ split-pane prototype with toolbar actions, pane layout, and resizing, and added four browser-test cases. **Prototype PR #1015 was closed without merging.**
 
 ## Research & Skills
 
