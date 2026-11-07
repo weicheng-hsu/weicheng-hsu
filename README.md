@@ -40,7 +40,7 @@ A personal Python project that connects coding-agent command-line interface (CLI
 
 - Implemented incremental message delivery and a claim/submit protocol controlling a single speaking slot.
 - Added session resume and recovery, interruption controls, and agent rejoin handling.
-- Tested with a simulated Herdr backend and Linux PTYs, with GitHub Actions CI.
+- Tested message coordination, interruption, and recovery with a simulated Herdr backend, used Linux PTYs to test terminal interactions, and automated test execution with GitHub Actions.
 
 **Built with:** Python, Linux PTYs, automated testing, GitHub Actions  
 [Repository and demo](https://github.com/weicheng-hsu/herdr-chat)
