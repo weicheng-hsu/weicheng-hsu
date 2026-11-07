@@ -1,10 +1,10 @@
 # Wei-Cheng Hsu
 
-**ML Systems · Compiler Correctness · Developer Tools**
+**Software Engineering · ML Systems · Developer Tools**
 
-M.S. student at National Yang Ming Chiao Tung University (NYCU) and open-source contributor to **PyTorch**, **Apache TVM**, and **Modular / Mojo**. My work spans Python runtime compatibility, ML compiler frontends, and tools for reproducible experiments.
+I build tools for reproducible ML experiments and contribute correctness fixes to compiler infrastructure. I am an M.S. candidate at **National Yang Ming Chiao Tung University (NYCU)**, with contributions integrated into **PyTorch**, **Apache TVM**, and **Modular / Mojo**.
 
-Interested in software engineering roles in ML systems, compilers, and AI infrastructure.
+**Seeking 2027 new-graduate software engineering opportunities** in ML systems, compilers, AI infrastructure, and developer tools. Expected graduation: **August 2027** · Available from **September 2027** · Based in Hsinchu, Taiwan.
 
 [Email](mailto:willie103006@gmail.com) · [LinkedIn](https://www.linkedin.com/in/hsuweicheng/)
 
@@ -12,53 +12,63 @@ Interested in software engineering roles in ML systems, compilers, and AI infras
 
 ### PyTorch — TorchDynamo correctness
 
-**3 contributions merged upstream.** Improved compatibility between `torch.compile` and CPython for mapping proxies and self-referential containers, with full-graph regression tests.
+**3 fixes integrated upstream.** Improved CPython compatibility under `torch.compile`, with regression tests covering recursive formatting, mutation handling, and compilation-cache reuse. These contributions removed **7 CPython 3.13 expected-failure markers**.
 
-- **Mapping proxies:** added `repr` / `str` support and regression tests for wrapped mappings, mutation, and cache reuse. [#196902](https://github.com/pytorch/pytorch/pull/196902)
+- **Mapping proxies:** added `repr` / `str` support while preserving mutation guards and recursive formatting. [#196902](https://github.com/pytorch/pytorch/pull/196902) · [Upstream commit](https://github.com/pytorch/pytorch/commit/755122e63e7b5644dae7233166b7ff24cf816b6b)
+- **Sets and set subclasses:** corrected recursive placeholders and preserved subclass names. [#198476](https://github.com/pytorch/pytorch/pull/198476) · [Upstream commit](https://github.com/pytorch/pytorch/commit/056b6cac6a66edc0b9690e4648297056aee55120)
+- **UserList / UserDict:** corrected cycle handling so recursive representations match CPython, with full-graph regression tests. [#198512](https://github.com/pytorch/pytorch/pull/198512) · [Upstream commit](https://github.com/pytorch/pytorch/commit/1ee8175f5b55fdf34390c700365ec6176fd77383)
 
-- **UserList / UserDict:** corrected cycle handling so recursive representations match CPython. [#198512](https://github.com/pytorch/pytorch/pull/198512)
-- **Sets and set subclasses:** corrected recursive placeholders and preserved subclass names. [#198476](https://github.com/pytorch/pytorch/pull/198476)
+### Apache TVM — Compiler frontend and validation
 
-### Apache TVM — ML compiler frontend
+**3 merged PRs** extending the Relax TFLite frontend and validating generated IR.
 
-**3 merged PRs.** Extended the Relax TFLite frontend with operator conversion and tests against expected IRModules.
-
-- **Conv3D:** implemented conversion with layout, stride, dilation, padding, and fused activation handling. [#19523](https://github.com/apache/tvm/pull/19523)
+- **Conv3D:** implemented operator conversion, kernel layout, stride, dilation, padding, and fused activation handling. [#19523](https://github.com/apache/tvm/pull/19523)
 - **Conv3D Transpose:** handled kernel layout, SAME / VALID padding, and output padding. [#19530](https://github.com/apache/tvm/pull/19530)
-- **Gather / GatherND:** added IR validation tests and corrected GatherND index typing. [#19516](https://github.com/apache/tvm/pull/19516)
+- **Gather / GatherND:** corrected GatherND index typing from int32 to int64 and added expected-IR tests. [#19516](https://github.com/apache/tvm/pull/19516)
 
 ### Modular / Mojo — Standard library type safety
 
-Added a compile-time type constraint and regression tests to `Tuple.__contains__`, so incompatible lookup types produce a compile-time error. [#7234](https://github.com/modular/modular/pull/7234)
+Added a compile-time constraint to `Tuple.__contains__` to reject incompatible lookup types, with **4 compile-fail regression cases**. Integrated into the public upstream repository.
 
-**Merged upstream and landed in the public repository.** [Upstream commit](https://github.com/modular/modular/commit/169207304e2c37c88483f3a41fc33b9ab519e02b).
+[#7234](https://github.com/modular/modular/pull/7234) · [Upstream commit](https://github.com/modular/modular/commit/169207304e2c37c88483f3a41fc33b9ab519e02b)
 
 ## Selected Projects
 
-### CCG-TUI — Terminal workspace for coding agents
+### herdr-chat — Multi-agent coordination tool
 
-A Python terminal interface for working with Codex, Claude Code, Gemini CLI, and Antigravity CLI.
+A Python coordination layer over Herdr that connects coding-agent CLI sessions through a shared group chat.
 
-- Unified backend adapters and activity reporting across multiple coding CLIs.
-- Persisted transcripts and recovery state, with explicit context handoff between backends.
+- Implemented incremental message delivery and a claim/submit protocol controlling a single speaking slot.
+- Added session resume and recovery, interruption controls, and agent rejoin handling.
+- Tested with a simulated Herdr backend and Linux PTYs, with GitHub Actions CI.
 
-**Built with:** Python, prompt_toolkit, JSON transcripts  
-[Repository](https://github.com/weicheng-hsu/ccg-tui) · [Demo (simulated backend)](https://github.com/weicheng-hsu/ccg-tui/blob/main/docs/assets/ccg-tui-demo.gif) · [Tests](https://github.com/weicheng-hsu/ccg-tui/tree/main/tests)
+**Built with:** Python, Linux PTYs, automated testing, GitHub Actions  
+[Repository and demo](https://github.com/weicheng-hsu/herdr-chat)
 
 ### HyperOpt Viz Studio — Experiment analysis and replay
 
-An interactive dashboard for inspecting hyperparameter optimization experiments.
+A Flask / React dashboard for inspecting hyperparameter optimization experiments.
 
-- Connected a Flask data service to a React interface for browsing experiments, tasks, methods, and runs.
-- Added optimization replay, parallel coordinates, and metric plots to inspect the search process.
+- Connected experiment, task, method, and run navigation to a Flask data service.
+- Built optimization replay, parallel coordinates, and metric plots to inspect the search process.
 
-**Built with:** TypeScript, React, Vite, Flask  
+**Built with:** React, TypeScript, Vite, Flask  
 [Repository](https://github.com/weicheng-hsu/HyperOpt-viz-Studio)
 
-## Skills & Research
+### BrowserOS — C++ split-pane prototype
 
-- **Languages:** Python, C/C++, TypeScript, Bash
-- **ML systems:** PyTorch, TVM Relax, compiler frontends, regression testing
-- **Engineering tools:** Linux, Git, Docker
+Developed a Chromium-based split-pane prototype with toolbar routing and resizing; built with `autoninja`, manually checked pane behavior, and added browser tests. **Prototype PR #1015 was closed without merging.**
 
-My research explores LLM-assisted Bayesian optimization and hyperparameter optimization for federated learning under limited evaluation budgets.
+## Research & Skills
+
+**Graduate research, NYCU · September 2024–present**
+
+- Built reproducible federated learning and hyperparameter optimization pipelines with PyTorch, Flower, FedML, Optuna, and Hyperopt.
+- Benchmarked TPE and other Bayesian optimization methods against random search under non-IID data distributions.
+- Investigated how early trial results influence exploration and exploitation in LLM-guided hyperparameter search.
+
+**Languages:** Python, C/C++, Bash  
+**ML & compilers:** PyTorch / TorchDynamo, TVM Relax, Optuna  
+**Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions
+
+I welcome conversations about 2027 graduate roles where debugging, testing, and building reliable tools are central to the work.
