@@ -2,13 +2,13 @@
 
 **Software Engineering · ML Systems · Developer Tools**
 
-I build tools for reproducible ML experiments and contribute correctness fixes to compiler infrastructure. I am an M.S. candidate at **National Yang Ming Chiao Tung University (NYCU)**, with contributions integrated into **PyTorch**, **Apache TVM**, and **Modular / Mojo**.
+I am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**. My work includes tools for machine learning (ML) experiments and independent open-source contributions to **PyTorch**, **Apache TVM**, and **Modular / Mojo**, covering compiler frontend conversion, Python compatibility, and regression tests.
 
 **Open to software engineering opportunities** in ML systems, compilers, AI infrastructure, and developer tools. Based in Hsinchu, Taiwan.
 
 [Email](mailto:willie103006@gmail.com) · [LinkedIn](https://www.linkedin.com/in/hsuweicheng/)
 
-## Selected Open Source Contributions
+## Independent Open Source Contributions
 
 ### PyTorch — TorchDynamo correctness
 
@@ -36,7 +36,7 @@ Added a compile-time constraint to `Tuple.__contains__` to reject incompatible l
 
 ### herdr-chat — Multi-agent coordination tool
 
-A Python coordination layer over Herdr that connects coding-agent CLI sessions through a shared group chat.
+A personal Python project that connects coding-agent command-line interface (CLI) sessions through a shared group chat, using Herdr.
 
 - Implemented incremental message delivery and a claim/submit protocol controlling a single speaking slot.
 - Added session resume and recovery, interruption controls, and agent rejoin handling.
@@ -47,7 +47,7 @@ A Python coordination layer over Herdr that connects coding-agent CLI sessions t
 
 ### HyperOpt Viz Studio — Experiment analysis and replay
 
-A Flask / React dashboard for inspecting hyperparameter optimization experiments.
+A personal Flask / React dashboard for inspecting hyperparameter optimization (HPO) experiments.
 
 - Connected experiment, task, method, and run navigation to a Flask data service.
 - Built optimization replay, parallel coordinates, and metric plots to inspect the search process.
@@ -67,8 +67,8 @@ Developed a Chromium-based split-pane prototype with toolbar routing and resizin
 - Benchmarked TPE and other Bayesian optimization methods against random search under non-IID data distributions.
 - Investigated how early trial results influence exploration and exploitation in LLM-guided hyperparameter search.
 
-**Languages:** Python, C/C++, Bash  
+**Languages:** Python, C, C++, Bash  
 **ML & compilers:** PyTorch / TorchDynamo, TVM Relax, Optuna  
-**Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions
+**Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions, regression testing
 
 I welcome conversations about roles involving debugging, testing, and building developer tools.
