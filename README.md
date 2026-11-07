@@ -2,7 +2,9 @@
 
 **Software Engineering · ML Systems · Developer Tools**
 
-I am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**. My work includes tools for machine learning (ML) experiments and independent open-source contributions to **PyTorch**, **Apache TVM**, and **Modular / Mojo**, covering compiler frontend conversion, Python compatibility, and regression tests.
+I build ML experiment tools and developer tools, and contribute fixes and regression tests to open-source projects. My recent work includes **3 fixes integrated into PyTorch**, **3 merged Apache TVM PRs**, and a **Mojo standard-library contribution**.
+
+I work with **Python, C/C++, and Linux** and am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**.
 
 **Open to software engineering opportunities** in ML systems, compilers, AI infrastructure, and developer tools. Based in Hsinchu, Taiwan.
 
@@ -28,7 +30,7 @@ I am an M.S. student at **National Yang Ming Chiao Tung University (NYCU)**. My 
 
 ### Modular / Mojo — Standard library type safety
 
-Added a compile-time constraint to `Tuple.__contains__` to reject incompatible lookup types, with **one compile-fail regression test covering four type-mismatch cases**. Integrated into the public upstream repository.
+Added a compile-time constraint to `Tuple.__contains__` to reject incompatible lookup types, with **compile-fail regression coverage for four type-mismatch cases**. Integrated upstream.
 
 [#7234](https://github.com/modular/modular/pull/7234) · [Upstream commit](https://github.com/modular/modular/commit/169207304e2c37c88483f3a41fc33b9ab519e02b)
 
@@ -36,7 +38,7 @@ Added a compile-time constraint to `Tuple.__contains__` to reject incompatible l
 
 ### herdr-chat — Multi-agent coordination tool
 
-A personal Python project that connects coding-agent command-line interface (CLI) sessions through a shared group chat, using Herdr.
+A Python tool for coordinating coding-agent command-line interface (CLI) sessions in a shared Herdr chat. It handles who speaks next and how sessions recover after interruptions.
 
 - Implemented incremental message delivery and a claim/submit protocol controlling a single speaking slot.
 - Added session resume and recovery, interruption controls, and agent rejoin handling.
@@ -47,7 +49,7 @@ A personal Python project that connects coding-agent command-line interface (CLI
 
 ### HyperOpt Viz Studio — Experiment analysis and replay
 
-A personal Flask / React dashboard for inspecting hyperparameter optimization (HPO) experiments.
+A Flask / React dashboard for comparing hyperparameter optimization (HPO) experiments and inspecting how each search progressed.
 
 - Connected experiment, task, method, and run navigation to a Flask data service.
 - Built a visual replay of saved trial results, parallel coordinates, and metric plots to inspect the search process.
@@ -57,7 +59,7 @@ A personal Flask / React dashboard for inspecting hyperparameter optimization (H
 
 ### BrowserOS — C++ split-pane prototype
 
-Developed a Chromium-based C++ split-pane prototype with toolbar actions, pane layout, and resizing, and added four browser-test cases. **Prototype PR #1015 was closed without merging.**
+Developed a Chromium-based C++ split-pane prototype with toolbar actions, pane layout, and resizing, and added four browser-test cases. [PR #1015](https://github.com/browseros-ai/BrowserOS/pull/1015) is closed and was not merged.
 
 ## Research & Skills
 
@@ -72,4 +74,4 @@ Developed a Chromium-based C++ split-pane prototype with toolbar actions, pane l
 **Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions, regression testing  
 **Course project experience:** Kubernetes
 
-I welcome conversations about roles involving debugging, testing, and building developer tools.
+My repositories and upstream changes show how I approach debugging, regression testing, and building developer tools.
