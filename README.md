@@ -69,6 +69,7 @@ Developed a Chromium-based split-pane prototype with toolbar routing and resizin
 
 **Languages:** Python, C, C++, Bash  
 **ML & compilers:** PyTorch / TorchDynamo, TVM Relax, Optuna  
-**Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions, regression testing
+**Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions, regression testing  
+**Course project experience:** Kubernetes
 
 I welcome conversations about roles involving debugging, testing, and building developer tools.
