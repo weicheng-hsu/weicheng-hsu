@@ -4,7 +4,7 @@
 
 I build tools for reproducible ML experiments and contribute correctness fixes to compiler infrastructure. I am an M.S. candidate at **National Yang Ming Chiao Tung University (NYCU)**, with contributions integrated into **PyTorch**, **Apache TVM**, and **Modular / Mojo**.
 
-**Seeking 2027 new-graduate software engineering opportunities** in ML systems, compilers, AI infrastructure, and developer tools. Expected graduation: **August 2027** · Available from **September 2027** · Based in Hsinchu, Taiwan.
+**Open to software engineering opportunities** in ML systems, compilers, AI infrastructure, and developer tools. Based in Hsinchu, Taiwan.
 
 [Email](mailto:willie103006@gmail.com) · [LinkedIn](https://www.linkedin.com/in/hsuweicheng/)
 
@@ -71,4 +71,4 @@ Developed a Chromium-based split-pane prototype with toolbar routing and resizin
 **ML & compilers:** PyTorch / TorchDynamo, TVM Relax, Optuna  
 **Systems & testing:** Linux, Git, Docker, pytest, GitHub Actions
 
-I welcome conversations about 2027 graduate roles where debugging, testing, and building reliable tools are central to the work.
+I welcome conversations about roles involving debugging, testing, and building developer tools.
